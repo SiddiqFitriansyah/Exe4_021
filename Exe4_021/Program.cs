@@ -36,5 +36,9 @@ namespace Exe4_021
                 ele[++top] = item;
             }
         }
+        public int Pop()
+        {
+
+        }
     }
 }
