@@ -49,5 +49,20 @@ namespace Exe4_021
                 return ele[top--];
             }
         }
+        public void Display()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            else
+            {
+                for (int i = 0; i <= top; i++)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
+                }
+            }
+        }
     }
 }
