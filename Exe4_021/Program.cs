@@ -24,5 +24,17 @@ namespace Exe4_021
             top = -1;
             max = size;
         }
+        public void Push(int item)
+        {
+            if (top == max-1)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                ele[++top] = item;
+            }
+        }
     }
 }
