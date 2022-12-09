@@ -20,6 +20,8 @@ namespace Exe4_021
         public Stack(int size)
         {
             ele = new int[size];
+            top = -1;
+            max = size;
         }
     }
 }
