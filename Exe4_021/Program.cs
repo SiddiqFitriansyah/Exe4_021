@@ -12,4 +12,14 @@ namespace Exe4_021
             next = null;
         }
     }
+    class Stack
+    {
+        private int[] ele;
+        private int top;
+        private int max;
+        public Stack(int size)
+        {
+            ele = new int[size];
+        }
+    }
 }
