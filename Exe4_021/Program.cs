@@ -6,6 +6,7 @@ namespace Exe4_021
     {
         public int info;
         public Siddiq next;
+        private int[] a = new int[41];
         public Siddiq(int i, Siddiq S)
         {
             info = i;
