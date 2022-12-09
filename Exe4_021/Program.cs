@@ -40,8 +40,13 @@ namespace Exe4_021
         {
             if(top == -1)
             {
-                Console.WriteLine("Poped Element is: " + ele[top]);
+                Console.WriteLine("Stack Underflow");
                 return -1;
+            }
+            else
+            {
+                Console.WriteLine(" Poped Element is: " + ele[top]);
+                return ele[top--];
             }
         }
     }
