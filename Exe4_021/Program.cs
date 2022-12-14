@@ -4,22 +4,21 @@ namespace Exe4_021
 {
     class Siddiq
     {
-        public int info;
+        public string info;
         public Siddiq next;
         public Siddiq(int i, Siddiq SF)
-        {
-            info = i;   
+        {   
             next = SF;  
         }
     }
     class Stack
     {
-        private int[] Siddiq;
+        string [] Siddiq;
         private int top;
         private int max;
         public Stack(int size)
         {
-            Siddiq = new int[size];
+            Siddiq = new string[size];
             top = -1;
             max = size;
         }
@@ -30,7 +29,7 @@ namespace Exe4_021
             else
                 return (false);
         }
-        public void Push(int item)
+        public void Push(string item)
         {
             if (top == max -1)
             {
@@ -52,7 +51,7 @@ namespace Exe4_021
             else
             {
                 Console.WriteLine(" Poped Element is: " + Siddiq[top]);
-                return Siddiq[top--];
+                return top;
             }
         }
         public void Display()
@@ -86,10 +85,8 @@ namespace Exe4_021
                 {
                     case '1':
                         Console.Write("\nEnter a Number of Letter: ");
-                        string letter;
-                        int num;
-                        s.Push(ch);
-                        Console.ReadLine();
+                        string num = Console.ReadLine();
+                        s.Push(num);
                         break;
                     case '2':
                         if (s.empty())
