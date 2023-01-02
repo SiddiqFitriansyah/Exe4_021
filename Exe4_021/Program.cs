@@ -74,8 +74,8 @@ namespace Exe4_021
             {
                 Console.WriteLine();
                 Console.WriteLine("\n***Stack Menu***\n");
-                Console.WriteLine("1. Push Element.");
-                Console.WriteLine("2. Pop Element");
+                Console.WriteLine("1. Push the Element.");
+                Console.WriteLine("2. Pop the Element");
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit");
                 Console.WriteLine("\nEnter your choice");
